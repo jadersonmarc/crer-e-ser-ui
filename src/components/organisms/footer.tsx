@@ -4,10 +4,10 @@ import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 const Footer: React.FC = () => {
 
   return (
-    <footer className="bg-sky-900  text-yellow-600 text-center py-4">    
+    <footer className="bg-sky-900  text-yellow-600 text-center py-4 mt-auto">    
       
       <p style={{ fontFamily: "Libre Baskerville" }} className=' font-serif text-center text-3xl'> Crer + Ser em Cristo</p>
-      <ul className='flex justify-center space-x-8 my-4'>
+      <ul className='flex justify-center  space-x-8 my-4'>
           <li>            
               <Link href={'/'}>
                   <FaFacebook className="text-blue-500 text-2xl hover:text-blue-600" />
