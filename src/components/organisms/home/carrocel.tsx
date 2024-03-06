@@ -16,9 +16,9 @@ const Carousel: React.FC = () => {
         autoplaySpeed: 5000
       };
 
-    const adoration = require('../../../../../public/ador.jpg');
-    const victory = require('../../../../../public/crer-abrc.jpg');
-    const winnerWater = require('../../../../../public/fast.jpg');
+    const adoration = require('../../../../public/ador.jpg');
+    const victory = require('../../../../public/crer-abrc.jpg');
+    const winnerWater = require('../../../../public/fast.jpg');
 
   return (
     <div>
@@ -42,7 +42,7 @@ const Carousel: React.FC = () => {
       </Slider> 
       <div className='text-center'>
         <h3  style={{ fontFamily: "Libre Baskerville" }} className=' font-serif text-center mt-4 text-3xl'>Vivendo na maravilhosa graça de Deus!</h3>
-        <p className='font-mono text-center my-4'>Estamos abertos de domingo a segunda</p>
+        <p className='font-mono text-xs text-slate-600 text-center my-4'>Estamos abertos de domingo a segunda</p>
       </div>
     </div>
 

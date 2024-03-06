@@ -1,7 +1,6 @@
 import React , { ReactNode } from 'react';
 import Navbar from '../organisms/navbar';
 import Footer from '../organisms/footer';
-import Carousel from '../organisms/content/home/carrocel';
 
 interface LayoutBaseProps {
   children: ReactNode;

@@ -1,13 +1,14 @@
 import Layout from "../baseLayout";
-import Carousel from "@/components/organisms/content/home/carrocel";
+import Carousel from "@/components/organisms/home/carrocel";
+import Statistics from "@/components/organisms/home/statistics";
+
 const HomeLayout: React.FC = () => {
 
   return (
-    <div>
         <Layout>
             <Carousel />
+            <Statistics />  
         </Layout>
-    </div>
   );
 };
 
