@@ -6,7 +6,7 @@ interface LayoutBaseProps {
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutBaseProps> = ({ children }) => {
+const BaseLayout: React.FC<LayoutBaseProps> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -18,4 +18,4 @@ const Layout: React.FC<LayoutBaseProps> = ({ children }) => {
   );
 };
 
-export default Layout;
+export default BaseLayout;

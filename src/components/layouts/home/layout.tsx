@@ -1,4 +1,4 @@
-import Layout from "../baseLayout";
+import BaseLayout from "../baseLayout";
 import Carousel from "@/components/organisms/home/carrocel";
 import Statistics from "@/components/organisms/home/statistics";
 import VideoCardList from "@/components/organisms/home/videoCardList";
@@ -19,11 +19,11 @@ const HomeLayout: React.FC = () => {
   ];
 
   return (
-        <Layout>
+        <BaseLayout>
             <Carousel />
             <Statistics />
             <VideoCardList videos={videoList}/>
-        </Layout>
+        </BaseLayout>
   );
 };
 
