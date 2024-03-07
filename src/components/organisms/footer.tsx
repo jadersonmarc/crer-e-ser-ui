@@ -10,17 +10,17 @@ const Footer: React.FC = () => {
       <ul className='flex justify-center  space-x-8 my-4'>
           <li>            
               <Link href={'/'}>
-                  <FaFacebook className="text-blue-500 text-2xl hover:text-blue-600" />
+                  <FaFacebook className="text-yellow-600 text-2xl hover:text-blue-600" />
               </Link>
           </li>
           <li>
               <Link href={'/'}>
-                  <FaInstagram className="text-pink-500 text-2xl hover:text-pink-600" />
+                  <FaInstagram className="text-yellow-600 text-2xl hover:text-pink-600" />
               </Link>
           </li>
           <li>
               <Link href={'/'}>
-                  <FaYoutube className="text-red-500 text-2xl hover:text-red-600" />
+                  <FaYoutube className="text-yellow-600 text-2xl hover:text-red-600" />
               </Link>
           </li>
       </ul>
