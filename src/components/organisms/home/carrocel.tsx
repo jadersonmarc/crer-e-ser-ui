@@ -40,7 +40,7 @@ const Carousel: React.FC = () => {
 
   return (
   <div>
-    <Slider {...settings} className='h-full mt-8 overflow-hidden flex flex-col'>
+    <Slider {...settings} className='h-full mt-8 overflow-hidden rounded-md flex flex-col'>
       {cardData.map((data, index) => (
         <Card key={index} title={data.title} description={data.description} imageUrl={data.imageUrl} />
       ))}

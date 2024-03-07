@@ -4,6 +4,7 @@ type Video = {
   imageUrl: string;
   title: string;
   description: string;
+  width: string;
 };
   
 type VideoCardListProps = {
@@ -12,9 +13,9 @@ type VideoCardListProps = {
 
 export default function VideoCardList({ videos }: VideoCardListProps) {
   return (
-    <div className="flex flex-col bg-gray-100 p-4 w-full rounded-lg shadow-md items-center" style={{ width: '100%' }}>
+    <div className="flex flex-col bg-gray-100 p-4 w-full rounded-lg shadow-md items-center">
       {videos.map((video, index) => (
-        <VideoCard key={index} imageUrl={video.imageUrl} title={video.title} description={video.description} />
+        <VideoCard key={index} imageUrl={video.imageUrl} title={video.title} description={video.description} width={video.width} />
       ))}
     </div>
   );

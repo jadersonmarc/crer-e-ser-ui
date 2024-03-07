@@ -13,9 +13,9 @@ const HomeLayout: React.FC = () => {
   const winnerWaterImg = "Título da Imagem 2";
 
   const videoList = [
-    { imageUrl: adoration, title: adorationImg, description: winnerWaterImg },
-    { imageUrl: victory, title: victoryImg, description: winnerWaterImg },
-    { imageUrl: winnerWater, title: winnerWaterImg, description: winnerWaterImg }
+    { imageUrl: adoration, title: adorationImg, description: winnerWaterImg, width: '80%'},
+    { imageUrl: victory, title: victoryImg, description: winnerWaterImg, width: '80%'},
+    { imageUrl: winnerWater, title: winnerWaterImg, description: winnerWaterImg, width: '80%' }
   ];
 
   return (
