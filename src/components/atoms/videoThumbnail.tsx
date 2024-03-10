@@ -2,13 +2,10 @@ import Image from 'next/image';
 
 type VideoThumbnailProps = {
     imageUrl: string;
-    title?: string;
-    height?: string;
-    width?: string;
-    
+    title?: string;   
   };
 
-function VideoThumbnail({ imageUrl, title = '', height = '', width = '80%'}: VideoThumbnailProps) {
+function VideoThumbnail({ imageUrl, title = ''}: VideoThumbnailProps) {
     return (
       <div  className="w-full relative h-full bg-gray-300 cursor-pointer rounded-md mb-2" >
         <Image src={imageUrl} alt={title} className="w-full h-full rounded-md mb-2 object-cover" />

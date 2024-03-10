@@ -13,21 +13,21 @@ const  cardData = [
     description: "",
     imageUrl: adoration,
     with: '100%',
-    height: '500px'
+    height: '700px'
   },
   {
     title: "",
     description: "",
     imageUrl: victory,
     with: '100%',
-    height: '500px'
+    height: '700px'
   },
   {
     title: "",
     description: "",
     imageUrl: winnerWater,
     with: '100%',
-    height: '500px'
+    height: '700px'
   }
 ];
 

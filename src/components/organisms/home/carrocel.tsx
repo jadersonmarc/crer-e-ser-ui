@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../atoms/card';
+import Card from '@/components/molecules/card';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -22,19 +22,25 @@ const Carousel: React.FC = () => {
 
     const cardData = [
       {
-        title: "Título da Imagem 1",
-        description: "Culto de adoração",
-        imageUrl: adoration
+        title: "",
+        description: "",
+        imageUrl: adoration,
+        with: '100%',
+        height: '700px'
       },
       {
-        title: "Título da Imagem 2",
-        description: "Culto da vitória",
-        imageUrl: victory
+        title: "",
+        description: "",
+        imageUrl: victory,
+        with: '100%',
+        height: '700px'
       },
       {
-        title: "Título da Imagem 3",
-        description: "Festa nas águas",
-        imageUrl: winnerWater
+        title: "",
+        description: "",
+        imageUrl: winnerWater,
+        with: '100%',
+        height: '700px'
       }
     ];
 
@@ -42,7 +48,10 @@ const Carousel: React.FC = () => {
   <div>
     <Slider {...settings} className='h-full mt-8 overflow-hidden rounded-md flex flex-col'>
       {cardData.map((data, index) => (
-        <Card key={index} title={data.title} description={data.description} imageUrl={data.imageUrl} />
+        <Card 
+          key={index}
+          { ...data}
+        />
       ))}
     </Slider> 
     <div className='text-center'>
