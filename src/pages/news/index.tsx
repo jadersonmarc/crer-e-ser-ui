@@ -1,10 +1,11 @@
 import BaseLayout from '../../components/layouts/baseLayout';
+import Statistics from '@/components/organisms/statistics';
 
 export default function News() {
   return (
     <>
       <BaseLayout>
-        <div></div> 
+        <Statistics />
       </BaseLayout>
     </>
   );

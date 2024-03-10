@@ -1,7 +1,7 @@
 import BaseLayout from "../baseLayout";
 import Carousel from "@/components/organisms/home/carrocel";
-import Statistics from "@/components/organisms/home/statistics";
-import VideoCardList from "@/components/organisms/home/videoCardList";
+import Statistics from "@/components/organisms/statistics";
+import VideoCardList from "@/components/organisms/videoCardList";
 
 const HomeLayout: React.FC = () => {
 
@@ -22,7 +22,13 @@ const HomeLayout: React.FC = () => {
         <BaseLayout>
             <Carousel />
             <Statistics />
-            <VideoCardList videos={videoList}/>
+            <VideoCardList 
+            videos={videoList} 
+            direction="flex-col" 
+            width='90%' 
+            height="350px"
+            cardWidth="70%"
+             />
         </BaseLayout>
   );
 };
