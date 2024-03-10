@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
 import VideoCard from "@/components/molecules/videoCard";
-import VideoCardProps from "@/components/types/VideoCardProps";
+import SliderVideo from "@/components/organisms/home/sliderVideos";
 
 const VideoLayout: React.FC = () => {
 
@@ -85,14 +85,7 @@ const VideoLayout: React.FC = () => {
   return (
     <>
       <BaseLayout>
-        <Slider {...settings} className='h-full mt-8 overflow-hidden flex flex-col'>
-          {cardData.map((data, index) => (
-            <VideoCard 
-            key={index} 
-            { ...data} 
-            />
-          ))}
-        </Slider>
+        <SliderVideo />
         <h1 style={{ fontFamily: "Libre Baskerville" }} className='text-center text-3xl text-bold'>Nossos Cultos</h1>
         <p className="text-xs font-mono my-6 text-slate-600 text-center">Dignissimos asperiores vitae velit veniam totam fuga molestias acusamus alias autem provident. Odit ab aliquam dolor eius.</p>
         <VideoCardList 
