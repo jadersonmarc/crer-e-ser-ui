@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
             links.map((link, index) => (
             <li key={index}>
                 <Link href={linksMapping[link].toLowerCase() === 'início' ? '/' : `/${link.toLowerCase()}`}>
-                    <label className="text-cyan-900 pt-2 first:font-mono hover:border-t-2  border-cyan-900 cursor-pointer">{linksMapping[link]}</label>
+                    <label className="text-cyan-900 pt-2 first:font-mono hover:border-t-2  border-cyan-900 cursor-pointer text-lg font-bold">{linksMapping[link]}</label>
                 </Link>
             </li>
             ))

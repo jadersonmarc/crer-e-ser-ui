@@ -2,6 +2,7 @@ import BaseLayout from "../baseLayout";
 import Carousel from "@/components/organisms/home/carrocel";
 import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
+import CardList from "@/components/organisms/CardList"; 
 
 const HomeLayout: React.FC = () => {
 
@@ -13,22 +14,55 @@ const HomeLayout: React.FC = () => {
   const winnerWaterImg = "Título da Imagem 2";
 
   const videoList = [
-    { imageUrl: adoration, title: adorationImg, description: winnerWaterImg, width: '80%'},
-    { imageUrl: victory, title: victoryImg, description: winnerWaterImg, width: '80%'},
-    { imageUrl: winnerWater, title: winnerWaterImg, description: winnerWaterImg, width: '80%' }
+    { 
+      imageUrl: adoration,
+      title: adorationImg,
+      description: winnerWaterImg
+    },
+    { 
+      imageUrl: victory,
+      title: victoryImg,
+      description: winnerWaterImg
+    },
+    { 
+      imageUrl: winnerWater,
+      title: winnerWaterImg,
+      description: winnerWaterImg
+    },
+    { 
+      imageUrl: adoration,
+      title: adorationImg,
+      description: winnerWaterImg
+    },
+    { imageUrl: victory,
+      title: victoryImg,
+      description: winnerWaterImg
+    },
+    { 
+      imageUrl: winnerWater,
+      title: winnerWaterImg,
+      description: winnerWaterImg
+    }
   ];
 
   return (
         <BaseLayout>
             <Carousel />
             <Statistics />
+            <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nsossos Cultos</h1>
             <VideoCardList 
             videos={videoList} 
-            direction="flex-col" 
-            width='90%' 
-            height="350px"
-            cardWidth="70%"
-             />
+            width='85%' 
+            height='300px'
+            cardWidth='30%'
+            />
+              <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nsossos Eventos</h1>
+            <CardList 
+                articles={videoList} 
+                width='85%' 
+                height='300px'
+                cardWidth='30%'
+            />
         </BaseLayout>
   );
 };
