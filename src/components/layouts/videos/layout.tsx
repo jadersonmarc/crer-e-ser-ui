@@ -1,11 +1,7 @@
 import BaseLayout from "../baseLayout";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
-import VideoCard from "@/components/molecules/videoCard";
-import SliderVideo from "@/components/organisms/home/sliderVideos";
+import SliderVideo from "@/components/organisms/videos/sliderVideos";
 
 const VideoLayout: React.FC = () => {
 
@@ -47,41 +43,7 @@ const VideoLayout: React.FC = () => {
       description: winnerWaterImg
     }
   ];
-
-  const  cardData = [
-    {
-      title: "",
-      description: "",
-      imageUrl: adoration,
-      with: '100%',
-      height: '500px'
-    },
-    {
-      title: "",
-      description: "",
-      imageUrl: victory,
-      with: '100%',
-      height: '500px'
-    },
-    {
-      title: "",
-      description: "",
-      imageUrl: winnerWater,
-      with: '100%',
-      height: '500px'
-    }
-  ];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000
-  };
-
+  
   return (
     <>
       <BaseLayout>
