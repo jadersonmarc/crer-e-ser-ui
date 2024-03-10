@@ -1,16 +1,15 @@
-import Image from 'next/image';
+
 import VideoThumbnail from '../atoms/videoThumbnail';
+import VideoCardProps from '../../components/types/VideoCardProps';
 
-type VideoCardProps = {
-    imageUrl: string;
-    title?: string;
-    description?: string;
-    width?: string;
-    height?: string;
-    cardWidth?: string;
-};
+function VideoCard({ 
+  imageUrl,
+  title = '',
+  description = '',
+  height = '', width = '100%',
+  cardWidth = '' 
 
-function VideoCard({ imageUrl, title = '', description = '', height = '', width = '100%', cardWidth = '' }: VideoCardProps) {
+}: VideoCardProps) {
     return (
       <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center my-6'>
         <div style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >

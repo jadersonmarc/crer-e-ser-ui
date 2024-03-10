@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
 import VideoCard from "@/components/molecules/videoCard";
+import VideoCardProps from "@/components/types/VideoCardProps";
 
 const VideoLayout: React.FC = () => {
 
@@ -47,7 +48,7 @@ const VideoLayout: React.FC = () => {
     }
   ];
 
-  const cardData = [
+  const  cardData = [
     {
       title: "",
       description: "",
@@ -88,12 +89,7 @@ const VideoLayout: React.FC = () => {
           {cardData.map((data, index) => (
             <VideoCard 
             key={index} 
-            title={data.title} 
-            description={data.description}
-            imageUrl={data.imageUrl}
-            width={data.with}
-            height={data.height}
-            cardWidth='100%'
+            { ...data} 
             />
           ))}
         </Slider>

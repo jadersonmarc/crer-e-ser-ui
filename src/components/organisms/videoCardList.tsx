@@ -22,9 +22,7 @@ export default function VideoCardList({ videos, direction = '', width = '', heig
       {videos.map((video, index) => (
         <VideoCard 
         key={index} 
-        imageUrl={video.imageUrl} 
-        title={video.title} 
-        description={video.description} 
+        { ...video }
         width={width} 
         height={height}
         cardWidth={cardWidth}
