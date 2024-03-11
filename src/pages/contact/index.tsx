@@ -1,12 +1,10 @@
-import BaseLayout from '../../components/layouts/baseLayout';
-import Statistics from '@/components/organisms/statistics';
+import ContactsLayouts from '@/components/layouts/contact/layout';
 
-export default function Videos() {
+export default function Contacts() {
+
   return (
     <>
-      <BaseLayout>
-        <Statistics />
-      </BaseLayout>
+      <ContactsLayouts />
     </>
   );
 }
