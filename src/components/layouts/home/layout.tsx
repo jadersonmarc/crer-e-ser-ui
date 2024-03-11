@@ -53,14 +53,14 @@ const HomeLayout: React.FC = () => {
               <p className='font-mono text-xs text-slate-600 text-center my-4'>Estamos abertos de domingo a segunda</p>
             </div>
             <Statistics />
-            <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nsossos Cultos</h1>
+            <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nossos Cultos</h1>
             <VideoCardList 
             videos={videoList} 
             width='85%' 
             height='300px'
             cardWidth='30%'
             />
-              <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nsossos Eventos</h1>
+              <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nossos Eventos</h1>
             <CardList 
                 articles={videoList} 
                 width='85%' 
