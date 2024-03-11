@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     news: 'Notícias',
     about: 'Sobre',
     contact: 'Contato',
-    institute: 'Instituto'
+    // institute: 'Instituto'
   };
 
   const links = Object.keys(linksMapping);
