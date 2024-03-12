@@ -15,12 +15,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="mt-8" role="navigation">
   
-      <div className="mb-8">
-          <h1 style={{ fontFamily: "Libre Baskerville" }} className="font-serif text-5xl  text-center text-yellow-600">
-              Crer + Ser em Cristo
-          </h1>
-      </div>
-      
+        <h1 style={{ fontFamily: "Libre Baskerville" }} className="font-serif text-5xl mb-8 text-center pr-4 text-yellow-600">
+            Crer + Ser em Cristo
+        </h1>
+
         <ul className="flex mt-8 justify-center space-x-10">
         {
             links.map((link, index) => (
