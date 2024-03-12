@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AuthLayout from '@/components/layouts/auth/layout';
 
 const Auth = () => {
-
 
   return (
     <>
