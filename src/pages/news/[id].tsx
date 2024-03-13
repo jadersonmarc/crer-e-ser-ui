@@ -61,6 +61,7 @@ const ArticlePage: React.FC = () => {
           {article.attributes.content.map((paragraph, index) => (
             <p key={index} className="mb-4 text-slate-600 font-mono">
               {paragraph.children.map((child, idx) => (
+                
                 <span key={idx}>{child.text}</span>
               ))}
             </p>
