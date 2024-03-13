@@ -11,7 +11,7 @@ function Card({
 
 }: VideoCardProps) {
     return (
-      <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center rounded-md my-6'>
+      <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center rounded-md mb-8'>
         <div style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
           <ImageCard
             imageUrl={imageUrl} 

@@ -11,9 +11,9 @@ function VideoCard({
 
 }: VideoCardProps) {
     return (
-      <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center my-6'>
+      <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center mb-8'>
         <div style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
-          <VideoThumbnail imageUrl={imageUrl} title={title} width={width} height={height}  />
+          <VideoThumbnail imageUrl={imageUrl} title={title} />
         </div>
         <div>
           <p className="text-lg text-center font-semibold mb-1">{title}</p>
