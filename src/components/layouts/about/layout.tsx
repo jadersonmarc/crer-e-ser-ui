@@ -10,7 +10,7 @@ const article =       {
   title: "",
   description: "",
   imageUrl: winnerWater,
-  with: '100%',
+  width: '100%',
   height: '700px'
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BaseLayout from '../../components/layouts/baseLayout';
 import { useRouter } from 'next/router';
 import  fetchWithToken  from '../api/utils/fetchWithToken';
+import Image from 'next/image';
 
 type Paragraph = {
   type: string;
@@ -20,6 +21,7 @@ type Article = {
     updatedAt: string;
     publishedAt: string;
     slug: string;
+    image_url: string;
   };
 };
 
@@ -58,6 +60,13 @@ const ArticlePage: React.FC = () => {
     <BaseLayout>
       <div className="container mx-auto text-sm max-w-prose py-8">
         <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-3xl text-slate-600 font-bold mb-8">{article.attributes.title}</h1>
+        <Image
+          src="http://localhost:1337/uploads/309226668_1414641665726802_7352307118919902178_n_fcb70c4fff.jpg"
+          alt="Imagem"
+          width={500}
+          height={300}
+          className='rounded-md mb-8'
+        />               
         <div>
           {article.attributes.content.map((paragraph, index) => (
             <p key={index} className="mb-4 text-slate-600 font-mono">
