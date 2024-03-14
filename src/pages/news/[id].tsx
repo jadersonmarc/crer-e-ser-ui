@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BaseLayout from '../../components/layouts/baseLayout';
 import { useRouter } from 'next/router';
+import  fetchWithToken  from '../api/utils/fetchWithToken';
 
 type Paragraph = {
   type: string;
@@ -36,7 +37,7 @@ const ArticlePage: React.FC = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`http://localhost:1337/api/articles/${id}`);
+        const response = await fetchWithToken(`http://localhost:1337/api/articles/${id}`);
         const data: ApiResponse = await response.json();
         setArticle(data.data);
       } catch (error) {
