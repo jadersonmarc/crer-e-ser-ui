@@ -72,7 +72,7 @@ const ArticlePage: React.FC = () => {
             <p key={index} className="mb-4 text-slate-600 font-mono">
               {paragraph.children.map((child, idx) => (
                 
-                <span key={idx}>{child.text}</span>
+              <span key={idx}>{child.text}</span>
               ))}
             </p>
           ))}
