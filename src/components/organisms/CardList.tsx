@@ -1,5 +1,4 @@
 import Card from "@/components/molecules/card";
-import { ArticleData } from '../types/ArticlesType';
 import { CardListProps } from '../types/CardListTypes';
 
 export default function CardList({ articles, direction = '', width = '', height = '', cardWidth = '' }: CardListProps) {

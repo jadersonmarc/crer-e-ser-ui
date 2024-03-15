@@ -8,7 +8,7 @@ import { ArticleData } from '../../types/ArticlesType';
   return (
     <>
       <BaseLayout>
-        <Carousel />
+        <Carousel articles={articles.articles} />
         <h1 style={{ fontFamily: "Libre Baskerville" }} className='text-center mt-8 text-3xl text-bold'>Nossos Eventos</h1>
         <p className="text-sm font-mono my-6 text-slate-600 mb-8 text-center">Dignissimos asperiores vitae velit veniam totam fuga molestias acusamus alias autem provident. Odit ab aliquam dolor eius.</p>
         <CardList 

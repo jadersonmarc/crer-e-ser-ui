@@ -3,9 +3,9 @@ import Card from '@/components/molecules/card';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { CardListProps } from '../../types/CardListTypes';
 
-
-const Carousel: React.FC = () => {
+function Carousel (articles: CardListProps[]) {
     const settings = {
         dots: true,
         infinite: true,
@@ -16,41 +16,17 @@ const Carousel: React.FC = () => {
         autoplaySpeed: 5000
       };
 
-    const adoration = require('../../../../public/ador.jpg');
-    const victory = require('../../../../public/crer-abrc.jpg');
-    const winnerWater = require('../../../../public/fast.jpg');
-
-    const cardData = [
-      {
-        title: "",
-        description: "",
-        imageUrl: adoration,
-        with: '100%',
-        height: '700px'
-      },
-      {
-        title: "",
-        description: "",
-        imageUrl: victory,
-        with: '100%',
-        height: '700px'
-      },
-      {
-        title: "",
-        description: "",
-        imageUrl: winnerWater,
-        with: '100%',
-        height: '700px'
-      }
-    ];
-
   return (
   <div>
     <Slider {...settings} className='h-full overflow-hidden rounded-md flex flex-col'>
-      {cardData.map((data, index) => (
+      {articles.articles.map((article: any, index: number) => (
         <Card 
           key={index}
-          { ...data}
+          imageUrl={article.attributes.image_url}
+          width='100%' 
+          height='700px'
+          
+          href={`/news/${article.id}`}
         />
       ))}
     </Slider> 
