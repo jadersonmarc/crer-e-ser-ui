@@ -18,14 +18,14 @@ function Card({
             title={title}
             />
         </div>
-        <div className={(title || description) ? 'h-40' : ''}>
-  {(title || description) && (
-    <>
-      {title && <p className="text-lg text-center font-semibold mb-1">{title}</p>}
-      {description && <p className="text-sm text-center text-gray-600">{description}</p>}
-    </>
-  )}
-</div>
+        <div className={(title || description) ? 'h-40 w-70' : ''}>
+          {(title || description) && (
+            <>
+              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-20 mb-4 text-center font-semibold mb-1">{title}</p>}
+              {description && <p className="text-sm font-mono text-slate-600 text-center">{description}</p>}
+            </>
+          )}
+        </div>
       </div>
 
     );

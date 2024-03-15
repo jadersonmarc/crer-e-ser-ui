@@ -8,7 +8,7 @@ const data = [
 const Statistics: React.FC = () => {
     return (  
       <div className="flex flex-col items-center my-10 px-10">
-          <p className="text-xs font-mono text-slate-600 text-center">
+          <p className="text-sm font-mono text-slate-600 text-center">
               Temos curiosidades muito distantes, atrás da palavra montanhas, longe dos países Vokalia e Consonantia, vivem os textos cegos.
           </p>
 
