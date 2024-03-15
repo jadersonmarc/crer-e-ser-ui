@@ -5,6 +5,7 @@ type VideoCardProps = {
     width?: string;
     height?: string;
     cardWidth?: string;
+    href?: string;    
 };
 
 export default VideoCardProps;

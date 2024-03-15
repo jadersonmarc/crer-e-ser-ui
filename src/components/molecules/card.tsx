@@ -1,5 +1,6 @@
 import ImageCard from '../atoms/cardImage';
 import VideoCardProps from '../../components/types/VideoCardProps';
+import Link from 'next/link';
 
 function Card({ 
   imageUrl,
@@ -7,17 +8,18 @@ function Card({
   description = '',
   height = '', 
   width = '100%',
-  cardWidth = '' 
+  cardWidth = '',
+  href = ''
 
 }: VideoCardProps) {
     return (
       <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center rounded-md mb-8'>
-        <div style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
+        <Link href={href} style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
           <ImageCard
             imageUrl={imageUrl} 
             title={title}
             />
-        </div>
+        </Link>
         <div className={(title || description) ? 'h-40 w-70' : ''}>
           {(title || description) && (
             <>

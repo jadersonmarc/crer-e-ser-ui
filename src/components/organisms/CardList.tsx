@@ -15,6 +15,7 @@ export default function CardList({ articles, direction = '', width = '', height 
         width={width} 
         height={height}
         cardWidth={cardWidth}
+        href={`/news/${article.id}`}
          />
         
       ))}
