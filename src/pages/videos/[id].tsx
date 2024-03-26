@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import BaseLayout from '../../components/layouts/baseLayout';
-import Image from 'next/image';
 import useVideo from '@/components/hooks/useVideo';
 
 const VideoPage: React.FC = () => {
