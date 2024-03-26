@@ -1,23 +1,29 @@
 
 import VideoThumbnail from '../atoms/videoThumbnail';
 import VideoCardProps from '../../components/types/VideoCardProps';
+import Link from 'next/link';
 
 function VideoCard({ 
   imageUrl,
   title = '',
   description = '',
-  height = '', width = '100%',
-  cardWidth = '' 
-
+  height = '', 
+  width = '100%',
+  cardWidth = '',
+  href = ''
 }: VideoCardProps) {
     return (
       <div style={{  width: cardWidth}} className='flex flex-col items-center justify-center mb-8'>
-        <div style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
+        <Link href={href} style={{ height: height, width: width}} className="mb-8  flex flex-col items-center justify-center" >
           <VideoThumbnail imageUrl={imageUrl} title={title} />
-        </div>
-        <div>
-          <p className="text-lg text-center font-semibold mb-1">{title}</p>
-          <p className="text-sm text-center text-gray-600">{description}</p>
+        </Link>
+        <div className={(title || description) ? 'h-40 w-70' : ''}>
+          {(title || description) && (
+            <>
+              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-20 mb-4 text-center font-semibold mb-1">{title.length > 30 ? `${title.substring(0, 30)}...` : title}</p>}
+              {description && <p className="text-sm font-mono text-slate-600 text-center">{description}</p>}
+            </>
+          )}
         </div>
       </div>
 
