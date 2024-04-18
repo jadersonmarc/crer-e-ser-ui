@@ -20,7 +20,7 @@ function VideoCard({
         <div className={(title || description) ? 'h-40 w-70' : ''}>
           {(title || description) && (
             <>
-              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-20 text-center font-semibold ">{title.length > 30 ? `${title.substring(0, 30)}...` : title}</p>}
+              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-16 text-center font-semibold ">{title.length > 30 ? `${title.substring(0, 30)}...` : title}</p>}
               {description && <p className="text-sm font-mono text-slate-600 text-center px-8">{description}</p>}
             </>
           )}

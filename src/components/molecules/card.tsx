@@ -23,7 +23,7 @@ function Card({
         <div className={(title || description) ? 'h-40 w-70' : ''}>
           {(title || description) && (
             <>
-              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-20 mb-4 text-center font-semibold mb-1">{title}</p>}
+              {title && <p style={{ fontFamily: "Libre Baskerville" }} className="text-lg h-16  text-center font-semibold">{title}</p>}
               {description && <p className="text-sm font-mono text-slate-600 text-center px-5">{description}</p>}
             </>
           )}
