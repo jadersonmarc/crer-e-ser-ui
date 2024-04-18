@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import InputMask from 'react-input-mask';
 
 type FormValues = {
   name: string;
@@ -25,9 +26,11 @@ function ContactForm() {
     </div>
 
     <div className="mb-4">
-      <label htmlFor="name" className="block font-mono text-slate-600 mb-1">Telefone</label>
-      <input type="text" id="name" {...register("name", { required: true })} className="border-gray-300 border rounded w-full p-2" />
-      {errors.name && <span className="text-red-500 text-sm">Este campo é obrigatório</span>}
+      <label htmlFor="phone" className="block font-mono text-slate-600 mb-1">Telefone</label>
+      <InputMask mask="(99) 99999-9999" {...register("phone", { required: true })} className="border-gray-300 border rounded w-full p-2">
+        {(inputProps) => <input type="text" id="phone" {...inputProps} />}
+      </InputMask>
+      {errors.phone && <span className="text-red-500 text-sm">Este campo é obrigatório</span>}
     </div>
 
     <div className="mb-4">

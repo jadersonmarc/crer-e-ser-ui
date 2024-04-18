@@ -2,7 +2,7 @@ import Card from "@/components/molecules/card";
 import { CardListProps } from '../types/CardListTypes';
 
 export default function CardList({ articles, direction = '', width = '', height = '', cardWidth = '' }: CardListProps) {
- 
+ console.log(articles)
   return (
     <div className={`flex ${direction} flex-wrap w-full h-full  rounded-lg items-center justify-center`}>
       {articles.map((article, index) => (

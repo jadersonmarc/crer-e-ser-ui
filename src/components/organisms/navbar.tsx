@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     videos: 'Vídeos',
     news: 'Notícias',
     about: 'Sobre',
-    contact: 'Contato',
+    // contact: 'Contato',
     
   };
 
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     localStorage.removeItem('token');
   };
 
-  const isLoggedIn = localStorage.getItem('token');
+  // const isLoggedIn = localStorage.getItem('token');
   return (
     <nav className="" role="navigation">
   

@@ -15,7 +15,7 @@ function Carousel (articles: CardListProps[]) {
         autoplay: true,
         autoplaySpeed: 5000
       };
-
+      
   return (
   <div>
     <Slider {...settings} className='h-full overflow-hidden rounded-md flex flex-col'>

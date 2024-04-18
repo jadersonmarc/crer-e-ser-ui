@@ -19,7 +19,7 @@ const VideoPage: React.FC = () => {
             src={video.attributes.video_url}
             title="Video"
             width={500}
-            height={300}
+            height={500}
             className='rounded-md mb-8'
             allowFullScreen
           />
