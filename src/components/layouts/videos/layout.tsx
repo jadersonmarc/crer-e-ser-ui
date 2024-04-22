@@ -1,5 +1,4 @@
 import BaseLayout from "../baseLayout";
-import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
 import SliderVideo from "@/components/organisms/videos/sliderVideos";
 import { VideoData } from '../../types/VideosType';
@@ -16,9 +15,8 @@ function VideoLayout (videos: VideoData) {
             videos={videos.videos} 
             width='75%' 
             height='250px'
-            cardWidth='30%'
+            cardWidth={window.innerWidth < 1024 ? '100%' : '30%'}
         />
-        <Statistics />
       </BaseLayout>
     </>
   );

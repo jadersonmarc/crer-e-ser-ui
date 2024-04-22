@@ -1,5 +1,4 @@
 import BaseLayout from "../baseLayout";
-import Statistics from "@/components/organisms/statistics";
 import Carousel from "@/components/organisms/home/carrocel";
 import CardList from "@/components/organisms/CardList";
 import { ArticleData } from '../../types/ArticlesType';
@@ -15,9 +14,8 @@ import { ArticleData } from '../../types/ArticlesType';
             articles={articles.articles} 
             width='85%' 
             height='300px'
-            cardWidth='30%'
+            cardWidth={window.innerWidth < 1024 ? '100%' : '30%'}
         />
-         <Statistics />
       </BaseLayout>
     </>
   );

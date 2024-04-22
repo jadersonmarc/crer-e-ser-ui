@@ -9,7 +9,7 @@ type Video = {
   
 export default function VideoCardList({ videos, direction = '', width = '', height = '', cardWidth = '' }: VideoCardListProps) {
   return (
-    <div className={`flex ${direction} flex-wrap w-full h-full  rounded-lg items-center justify-center`}>
+    <div className={`lg:flex ${direction} flex-wrap w-full h-full  rounded-lg items-center justify-center`}>
       {videos.slice(0, 6).map((video, index) => (
         <VideoCard 
         key={index} 

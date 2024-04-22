@@ -1,6 +1,7 @@
 import React , { ReactNode } from 'react';
 import Navbar from '../organisms/navbar';
 import Footer from '../organisms/footer';
+import Statistics from "@/components/organisms/statistics";
 
 interface LayoutBaseProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ const BaseLayout: React.FC<LayoutBaseProps> = ({ children }) => {
       <div >
          {children}
       </div>
+      <Statistics />
       <Footer />
     </div>
   );

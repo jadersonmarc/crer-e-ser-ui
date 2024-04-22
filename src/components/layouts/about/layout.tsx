@@ -1,5 +1,4 @@
 import BaseLayout from "../baseLayout";
-import Statistics from '@/components/organisms/statistics';
 import Card from '@/components/molecules/card';
 import AboutUs from '@/components/organisms/about/aboutUs';
 
@@ -20,7 +19,6 @@ export default function AboutLayout() {
       <BaseLayout>
         <Card { ...article } />
         <AboutUs />
-        <Statistics />
       </BaseLayout>
     </>
   );

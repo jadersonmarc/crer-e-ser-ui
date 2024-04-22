@@ -1,4 +1,3 @@
-
 import VideoThumbnail from '../atoms/videoThumbnail';
 import VideoCardProps from '../../components/types/VideoCardProps';
 import Link from 'next/link';

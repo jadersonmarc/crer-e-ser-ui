@@ -1,6 +1,5 @@
 import BaseLayout from "../baseLayout";
 import Carousel from "@/components/organisms/home/carrocel";
-import Statistics from "@/components/organisms/statistics";
 import VideoCardList from "@/components/organisms/videoCardList";
 import CardList from "@/components/organisms/CardList";
 
@@ -20,16 +19,16 @@ function HomeLayout({ videos, articles }) {
             videos={videos} 
             width='75%' 
             height='250px'
-            cardWidth='30%'
+            cardWidth={window.innerWidth < 1024 ? '100%' : '30%'}
         />
             <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-center text-3xl my-8">Nossos Eventos</h1>
             <CardList 
             articles={articles} 
             width='85%' 
             height='300px'
-            cardWidth='30%'
+            cardWidth={window.innerWidth < 1024 ? '100%' : '30%'}
         />
-            <Statistics />
+           
         </BaseLayout>
   );
 };
